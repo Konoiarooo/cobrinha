@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobrona</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preload" href="./font/PressStart2P.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+</head>
+<body style="height: 100vh;width: 100vw; margin: 0;padding: 0;">
+    <main style="height: 100%;width: 100%; background-color: gray;">
+        <section id="stats-in-game">
+            <span id="score"> TOTAL COLETADO - 0</span>
+            <span id="current-time"> 0 </span>
+        </section>
+        <form id="hud-modal-initial">
+            <div class="username">
+                <input autofocus name="username" id="username-input" type="text" placeholder="username" maxlength="10" minlength="3" required>
+                <input id="color-player" type="color">
+                <button id="ready"> READY! </button>
+            </div>
+        </form>
+        <div id="game-stats">
+            <div>
+                <span> GAME OVER </span>
+                <span id="game-stats-username"> USERNAME </span>
+                <span id="game-stats-score"> SCORE: 0</span>
+                <span id="game-stats-time"> TEMPO: 0</span>
+            </div>
+        </div>
+        <canvas id="game-canvas" height="500" width="1000">
+            
+        </canvas>
+    </main>
+</body>
+<script src="index.js" type="module" defer></script>
+</html>
